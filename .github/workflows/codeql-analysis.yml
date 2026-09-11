@@ -1,17 +1,11 @@
-# yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
+# $schema: https://json.schemastore.org/github-workflow.json
 
 name: "CodeQL"
 
 on:
   push:
-    paths:
-      - '**.cs'
-      - '**.csproj'
     branches: [master]
   pull_request:
-    paths:
-      - '**.cs'
-      - '**.csproj'
     # The branches below must be a subset of the branches above
     branches: [master]
   schedule:
